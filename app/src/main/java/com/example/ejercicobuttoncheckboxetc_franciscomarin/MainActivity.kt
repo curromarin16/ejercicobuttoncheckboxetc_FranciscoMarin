@@ -54,7 +54,7 @@ fun Aplicacion() {
     var textoBoton by remember { mutableStateOf("PULSAME") }
     var interruptor by remember { mutableStateOf(false) }
     var opcionseleccionada by remember { mutableStateOf(0) }
-    var mostrarradiobuttons by remember { mutableStateOf(false) } // Estado para mostrar los RadioButtons
+    var mostrarradiobuttons by remember { mutableStateOf(false) } 
 
     val imagenes = arrayOf(
         painterResource(id = R.drawable.imagen1),
@@ -90,7 +90,7 @@ fun Aplicacion() {
 
             if (comprobacion) {
                 Text(
-                    text = "ESTABA ESCONDIDO, YA NO", // mensaje estático para que no dependa del botón
+                    text = "ESTABA ESCONDIDO, YA NO", 
                     modifier = Modifier.padding(top = 20.dp)
                 )
             }
